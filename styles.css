@@ -1,0 +1,134 @@
+.card {
+  position: relative;
+  box-shadow: 4px 4px 8px 0 #bd910f;
+  transition: 0.3s;
+  width: 32%;
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card-info {
+  padding: 3px 20px;
+}
+
+.card-info h1 {
+  text-align: center;
+  text-shadow: 1px 1px #c99e1d;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey;
+}
+
+.card-info ul {
+  list-style-type: circle;
+  padding: 10px;
+}
+
+.card-info ul li {
+  margin-left: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+#main-title {
+  text-align: center;
+  color: #dedbd3;
+  font-size: 2.5em;
+  text-shadow: 3px 2px #f0c442;
+}
+
+#recipe-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.hidden {
+  display: none;
+}
+
+.form {
+  display: block;
+  text-align: center;
+}
+
+#form-show-buttons {
+  cursor: pointer;
+  text-align: center;
+}
+
+.button {
+  padding: 12px 24px;
+  border: 2px solid #f0c442;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.button:hover {
+  background-color: #f0c442;
+  color: white;
+}
+
+input[type="text"] {
+  width: 30%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+label {
+  font-size: 1.2em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #00a2ff;
+}
+
+input[type="submit"] {
+  background-color: #000a44;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+#or {
+  padding: 10px;
+  text-shadow: 1px 1px #b4b4b4;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.5em;
+}
+
+#filter-drop-down {
+  text-align: center;
+}
+
+.card-footer {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.card-footer a {
+  color: #b83d14;
+  font-family: helvetica;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+.card-footer a:active {
+  color: black;
+}
