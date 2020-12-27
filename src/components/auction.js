@@ -12,13 +12,13 @@ class Auction {
     }
 
     static renderAuctions(){
-      for(let auction of this.allAuctions){
+      for(let auction of Auction.allAuctions){
         auction.renderAuction()
     }
   }
 
   static fetchAuctions(){
-    fetch(auctionURL)
+    fetch(auctionsURL)
     .then(res => res.json())
     .then(auctions => {
      for(let auction of auctions){
