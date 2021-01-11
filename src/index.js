@@ -1,9 +1,9 @@
-const auctionForm = document.getElementById("auction-form")
-const auctionInput = document.getElementById("auction-input")
-const auctionList = document.getElementById("auction-list")
-const auctionURL = `http://localhost:3000/auctions`
-const guitarURL = `http://localhost:3000/guitars`
+const API_HOST = "http://localhost:3000";
+const AUCTIONS_API_URL = `${API_HOST}/auctions`;
+const GUITARS_API_URL = `${API_HOST}/guitars`;
 
-auctionForm.addEventListener("submit", Auction.submitAuction)
-
-Auction.fetchAuctions()
+document.addEventListener('DOMContentLoaded', () => {
+    auctionForm.addEventListener("submit", Auction.createAuction);
+    guitarForm.addEventListener("submit", Guitar.createGuitar);
+    Auction.fetchAuctions();
+});

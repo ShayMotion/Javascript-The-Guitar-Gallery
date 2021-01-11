@@ -1,68 +1,77 @@
-<center><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>The Guitar Gallery</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>The Guitar Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-
+<body>
+  <div class="container">
     <div id="top-header">
-       <h1>The Guitar Gallery</h1>
-       <h3 id ="txt-inside-img">An Online Guitar Gallery & Auction</h3>
+      <h1>The Guitar Gallery</h1>
+      <h3 id="txt-inside-img">An Online Guitar Gallery & Auction</h3>
     </div>
 
+    <br>
 
-    <div class="container">
-      <section id="auction-container"></section>
+    <h2>Current Auctions</h2>
+    <div class="auction-list-container">
+      <ul id="auction-list">
+      </ul>
     </div>
 
     <br></br>
+
     <form id="auction-form">
       <h2>Create A New Auction!</h2>
       <label for="auction-title">Title:</label>
       <input type="text" id="auction-title" placeholder="Enter Auction Title">
       <br></br>
       <label for="auction-start-date">Start Date:</label>
-      <input type="date" id="start-date" placeholder="Enter Start Date">
-      <label for="auction-end-date"><br></br>  End Date:</label>
-      <input type="date" id="end-date" placeholder="Enter End Date">
+      <input type="date" id="auction-start-date" placeholder="Enter Start Date">
+      <label for="auction-end-date"><br></br> End Date:</label>
+      <input type="date" id="auction-end-date" placeholder="Enter End Date">
       <br></br>
-    <br></br>
-      <input type="submit">
+      <br></br>
+      <input type="submit" class="button" value="Submit" id="auction-form-button">
     </form>
-    <ul id="auction-list">
-    </ul>
-      <br></br>
-    
 
-    <div id="guitar-form">
+    <br></br>
+
+
+    <div id="">
       <form id="guitar-form">
         <h2>Selling Your Guitar? Add it to an Auction!</h2>
         <label for="guitar-brand">Brand:</label>
         <input type="text" id="guitar-brand" placeholder="Enter Brand">
         <br></br>
         <label for="guitar-model">Model:</label>
-        <input type="text" id="new-guitar-model" placeholder="Enter Model">
+        <input type="text" id="guitar-model" placeholder="Enter Model">
         <br></br>
         <label for="guitar-year">Year:</label>
-        <input type="text" id="new-guitar-year" placeholder="Enter Year">
+        <input type="text" id="guitar-year" placeholder="Enter Year">
         <br></br>
         <label for="guitar-price">Price:</label>
-        <input type="text" id="new-guitar-price" placeholder="Enter Price">
+        <input type="text" id="guitar-price" placeholder="Enter Price">
+        <br><br>
+        <label for="guitar-auction">Auction:</label>
+        <select name="guitar-auction" id="guitar-auction">
 
+        </select>
         <br></br>
         <br></br>
-        <input id="form-submit" type="submit" value="Add Guitar">
-            </form>
-        <br></br>
+
+        <input id="form-submit" type="submit" class="button" value="Add Guitar">
       </form>
     </div>
+  </div>
 
-    <!-- JS scripts-->
-    <script src="./src/components/guitar.js"></script>
-    <script src="./src/components/auction.js"></script>
-    <script src="./src/index.js"></script>
-    </body></center>
+  <!-- JS scripts-->
+  <script src="./src/components/guitar.js"></script>
+  <script src="./src/components/auction.js"></script>
+  <script src="./src/index.js"></script>
+</body>
+
+</html>

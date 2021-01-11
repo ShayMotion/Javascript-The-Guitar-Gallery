@@ -1,3 +1,16 @@
+.container {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+}
+
+.auction-list-container {
+  margin: auto;
+  text-align: left;
+  min-width: 350px;
+  max-width: 450px;
+}
+
 .card {
   position: relative;
   box-shadow: 4px 4px 8px 0 #bd910f;
@@ -89,7 +102,7 @@ label {
   color: #00a2ff;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: #000a44;
   color: white;
   border-radius: 8px;
